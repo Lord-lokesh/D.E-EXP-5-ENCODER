@@ -1,19 +1,14 @@
-### EXP-5 ENCODER 8TO3 DATAFLOW Modelling
+### ENCODER 8TO3 DATAFLOW Modelling
 
-*NAME:LOKESH M**
-
-*REF NO:24009743*
-
-
-*AIM:*
+**AIM:**
 
 To implement  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables
 
-*SOFTWARE REQUIRED:* Quartus prime
+**SOFTWARE REQUIRED:** Quartus prime
 
-*THEORY*
+**THEORY**
 
-*Encoder 8 To 3*
+**Encoder 8 To 3**
 
 The 8 to 3 line Encoder is also known as Octal to Binary Encoder. In 8 to 3 line encoder, there is a total of eight inputs, i.e., D0, D1, D2, D3, D4, D5, D6, and D7 and three outputs, i.e., A0, A1, and A2. In 8-input lines, one input-line is set to true at a time to get the respective binary code in the output side. Below are the block diagram and the truth table of the 8 to 3 line encoder.
 
@@ -21,7 +16,7 @@ The 8 to 3 line Encoder is also known as Octal to Binary Encoder. In 8 to 3 line
 
 Figure 01  Block Diagram of Encoder 8 * 3
 
-*Truth Table*
+**Truth Table**
 
 ![image](https://github.com/naavaneetha/ENCODER8TO3DATAFLOW/assets/154305477/35496b14-ae6e-4cd1-9abd-d6736b576575)
 
@@ -39,59 +34,35 @@ Logical circuit of the above expressions is given below:
 
 Figure 02  Encoder 8 * 3
 
-*Procedure*
-1.	Type the program in Quartus software.
+**Procedure**
+```
+1.Type the program in Quartus software.
 
-2.	Compile and run the program.
+2.Compile and run the program.
 
-3.	Generate the RTL schematic and save the logic diagram.
+3.Generate the RTL schematic and save the logic diagram.
 
-4.	Create nodes for inputs and outputs to generate the timing diagram.
+4.Create nodes for inputs and outputs to generate the timing diagram.
 
-5.	For different input combinations generate the timing diagram.
+5.For different input combinations generate the timing diagram.
+```
+**PROGRAM**
 
-
-*PROGRAM*
-
-module ex5(din,,a,b,c);
-
-
-input[0:7]din;
+/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming.
+![image](https://github.com/Priyanghaofficial/ENCODER8TO3DATAFLOW/assets/147121154/15e303a7-1c47-4b5d-bbc0-b2f032edff9e)
 
 
-output a;
+Developed by:LOKESH M
+RegisterNumber:24009743
+*/
+
+**RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![image](https://github.com/Priyanghaofficial/ENCODER8TO3DATAFLOW/assets/147121154/6bdb2422-4344-405c-9fab-96f3673d6d55)
 
 
-output b;
+**TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![image](https://github.com/Priyanghaofficial/ENCODER8TO3DATAFLOW/assets/147121154/848a3861-f0e5-4f3c-ac42-60c74be75acf)
 
 
-output c;
-
-
-assign a=din[4]| din[5]| din[6]| din[7];
-
-
-assign b=din[2]| din[3]| din[6]| din[7];
-
-
-assign c=din[2]| din[4]| din[6]| din[7];
-
-
-endmodule
-
-
-
-Developed by: RegisterNumber:24009743
-
-
-*RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling*
-![Screenshot 2024-11-22 133754](https://github.com/user-attachments/assets/4d939a96-35cd-48df-8a65-e3d461f832ec)
-
-*waveform:*
-![Screenshot 2024-11-22 135136](https://github.com/user-attachments/assets/5436ad4a-fcfb-4670-9d38-47ad41e09381)
-
-*RESULTS*
-
-Thus to implement  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables
-Sucessfully.
-
+**RESULTS**
+Implementing Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables executed succesfully.
